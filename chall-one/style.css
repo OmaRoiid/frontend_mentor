@@ -1,0 +1,149 @@
+ @import "/scss/main.css";
+ @import "https://fonts.googleapis.com/css2?family=Spartan:wght@800&display=swap";
+body{
+    display: flex;
+    flex-direction: column;
+    background-image: url("img/bg-pattern-top-desktop.svg");
+    background-repeat: no-repeat;
+    font-family: 'Spartan', sans-serif;
+}
+
+.info{
+   height: 100%;
+}
+
+.info >:first-child{
+    color: hsl(300, 43%, 22%);
+    font-size: 50px;
+    font-weight: 900;
+}
+.info >:last-child{
+    line-height:2 ;
+    margin-top: 5px;
+}
+.top{
+    margin-top: 100px;
+    margin-left: 200px;
+}
+.top .rate{
+    margin-left: 150px;
+    display: flex;
+    flex-direction: column;
+text-align: center;
+flex-grow: 1;
+}
+.top .rate .tow{
+    margin-top: 20px;
+    margin-left: 35px;
+}
+.top .rate .three{
+    margin-top: 20px;
+    margin-left: 85px;
+}
+
+.rate img {
+    margin-left: 20px;
+    margin-top: 15px;
+    height: 18px;
+}
+.rate label {
+    margin-left: 30px;
+    margin-top: 18px;
+    font-size: 13px;
+    font-weight: 400;
+    color: hsl(300, 43%, 22%);
+   
+}
+.bottom{
+   margin-top: 80px;
+    margin-left: 200px;
+    display: flex;
+    flex-direction: row;
+    background-image: url("img/bg-pattern-bottom-desktop.svg");
+    background-repeat: no-repeat;
+}
+.one_reveiew{
+    display: flex;
+    flex-direction: row;
+    margin:30px 0 0 25px ;
+}
+.name{
+    display: flex;
+    flex-direction: column;
+}
+.name >:first-child{
+    color: white;
+    font-size: 15px;
+    margin-left: 10px;
+}
+.name >:last-child{
+    color:hsl(303, 10%, 53%);
+    font-size: 15px;
+    margin-top: 5px;
+    margin-left: 10px;
+    font-weight: 400;
+
+}
+.comment p{
+    margin-left: 21px;
+    margin-top: 20px;
+    margin-right: 21px;
+    font-size: 0.85rem;
+    font-weight: 500;
+    line-height: 1.5;
+}
+
+.two{
+    margin-left: 30px;
+    margin-top: 20px;
+}
+
+.third{
+    margin-left: 30px;
+    margin-top: 40px;
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+  }
+  .attribution a {
+    color: hsl(228, 45%, 44%);
+  }
+  @media screen and (max-width: 576px) {
+      .top{
+          display: flex;
+          flex-direction: column;
+          margin: 50px 20px 50px 20px;  
+          font-size: 15px;
+      }
+.info >:first-child{
+    font-size: 35px;
+    text-align: center;
+}
+.info >:last-child{
+    font-size: 15px;
+line-height: 1.5;
+text-align: center;
+}
+.top .rate{
+    margin: 10px 10px 10px 10px;
+}
+.rate-continer{
+    width: 90% !important;
+}
+.top .rate .one,.top .rate .tow ,.top .rate .three{
+    margin: 20px 0px 0px 20px;
+}
+
+.bottom{
+    flex-direction: column;
+    margin: 10px ;
+    justify-content: center;
+}
+.comment{
+    margin: 15px auto;
+}
+
+  }
+

@@ -1,0 +1,62 @@
+$grid__cols: 12;
+$grid-sm: 500;
+$grid-md: 768;
+$grid-lg: 992;
+$grid-xl: 1200;
+.row{
+    display: flex;
+    flex-wrap: nowrap;
+    width: 100%;
+}
+@mixin createCol($nameOfScreen,$screenWidth) {
+    @media screen and (min-width:$screenWidth*1px) {
+        @if($nameOfScreen=="")
+        { 
+            @for $i from 1 through $grid__cols {
+                .col-#{$i} {
+                  width: (100 / ($grid__cols / $i) ) * 1%;
+                }
+              }
+              .continer{
+                width: 100%;
+                margin: 0;
+              }
+              @include createOffset('',0)
+        }
+        @else{
+            @for $i from 1 through $grid__cols {
+                .col-#{$nameOfScreen}-#{$i} {
+                  width: (100 / ($grid__cols / $i) ) * 1%;
+                }
+              }
+              .continer{
+                width: $screenWidth*1%;
+                margin: 0;
+              }
+              @include createOffset($nameOfScreen,$screenWidth)
+        }
+        
+    }
+}
+@mixin createOffset($nameOfScreen,$currentScreenWidth) {
+        @if($nameOfScreen=="")
+        { 
+            @for $i from 1 through $grid__cols {
+                .offset-#{$i} {
+                  margin-left: (100 / ($grid__cols / $i) ) * 1%;
+                }
+              }
+        }
+        @else{
+            @for $i from 1 through $grid__cols {
+                .offset-#{$nameOfScreen}-#{$i} {
+                  width: (100 / ($grid__cols / $i) ) * 1%;
+                }
+              }
+        }
+}
+@include createCol("",0);
+@include createCol("sm",$grid-sm);
+@include createCol("md",$grid-md);
+@include createCol("lg",$grid-lg);
+@include createCol("xl",$grid-xl);
