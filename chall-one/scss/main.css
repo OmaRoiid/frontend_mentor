@@ -4,8 +4,8 @@
 }
 
 .rounded-img {
-  width: 50px;
-  height: 50px;
+  width: 45px;
+  height: 45px;
   border-radius: 50%;
 }
 
@@ -45,7 +45,7 @@
 }
 
 .p {
-  color: white;
+  color: #937b92;
 }
 
 .child-p {
@@ -60,10 +60,9 @@
   display: flex;
   -ms-flex-wrap: nowrap;
       flex-wrap: nowrap;
-  width: 100%;
 }
 
-@media screen and (max-width: 0px) {
+@media screen and (min-width: 0px) {
   .col-1 {
     width: 8.33333%;
   }
@@ -142,7 +141,7 @@
   }
 }
 
-@media screen and (max-width: 576px) {
+@media screen and (min-width: 500px) {
   .col-sm-1 {
     width: 8.33333%;
   }
@@ -180,7 +179,7 @@
     width: 100%;
   }
   .continer {
-    width: 576%;
+    width: 500%;
     margin: 0;
   }
   .offset-sm-1 {
@@ -221,7 +220,7 @@
   }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (min-width: 768px) {
   .col-md-1 {
     width: 8.33333%;
   }
@@ -300,7 +299,7 @@
   }
 }
 
-@media screen and (max-width: 992px) {
+@media screen and (min-width: 992px) {
   .col-lg-1 {
     width: 8.33333%;
   }
@@ -379,7 +378,7 @@
   }
 }
 
-@media screen and (max-width: 1200px) {
+@media screen and (min-width: 1200px) {
   .col-xl-1 {
     width: 8.33333%;
   }

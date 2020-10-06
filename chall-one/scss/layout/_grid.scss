@@ -6,7 +6,6 @@ $grid-xl: 1200;
 .row{
     display: flex;
     flex-wrap: nowrap;
-    width: 100%;
 }
 @mixin createCol($nameOfScreen,$screenWidth) {
     @media screen and (min-width:$screenWidth*1px) {
