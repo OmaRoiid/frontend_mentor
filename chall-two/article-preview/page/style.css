@@ -1,0 +1,80 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@700&display=swap");
+
+body {
+  max-width: 1440px;
+  font-size: 13px;
+  --Very-Dark-Grayish-Blue: hsl(217, 19%, 35%);
+  --Desaturated-Dark-Blue: hsl(214, 17%, 51%);
+  --Grayish-Blue: hsl(212, 23%, 69%);
+  --Light-Grayish-Blue: hsl(210, 46%, 95%);
+  background-color: var(--Light-Grayish-Blue) !important;
+  font-family: "Manrope", sans-serif;
+  background-color: var(--Light-Grayish-Blue) !important;
+}
+
+.card {
+  margin: 200px auto;
+  background-color: white;
+  width: 70%;
+  height: auto;
+  border-radius: 4%;
+  box-shadow: var(--Grayish-Blue);
+}
+
+.card__img img {
+  width: 250px;
+  height: 100%;
+  border-top-left-radius: 4%;
+  border-bottom-left-radius: 4%;
+}
+.card-horizontal {
+  display: flex;
+}
+.card_body {
+  padding: 30px;
+}
+.card_body .card_title {
+  font-size: 1.3rem;
+  color: var(--Very-Dark-Grayish-Blue);
+}
+.card_body .card_text {
+  font-weight: 500 !important;
+  color: var(--Grayish-Blue);
+}
+.person {
+  display: flex;
+  flex-direction: row;
+}
+.person__info {
+  display: flex;
+  flex-direction: row;
+}
+.person__info .rounded-circle {
+  width: 10%;
+}
+.person__info .name {
+  display: flex;
+  flex-direction: column;
+  margin-left: 10px;
+  margin-top: 5px;
+}
+.name > :first-child {
+  color: var(--Very-Dark-Grayish-Blue);
+  font-size: 14px;
+  margin-left: 10px;
+}
+.name > :last-child {
+  color: var(--Grayish-Blue);
+  font-size: 13px;
+  margin-top: 5px;
+  margin-left: 10px;
+  font-weight: 400;
+}
+.person .share {
+  width: auto;
+  height: 100%;
+  margin: auto;
+  padding: 8px;
+  border-radius: 50%;
+  background-color: var(--Light-Grayish-Blue);
+}
